@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prowess Lift</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<style>
+    .card-1:hover{
+        background-color: black;
+        color: white;
+    }
+
+    .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('./assests/banner1.jpg');
+            background-size: cover;
+            /* background-position: center; */
+            /* background-attachment: fixed; */
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            color: white;
+    }
+
+       .hero-section-1 {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('./assests/banner.jpg');
+            background-size: cover;
+            /* background-position: center; */
+            /* background-attachment: fixed; */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            margin-top: 60px;
+    }
+
+    .btn-outline-success:hover:hover{
+        color: aquamarine;
+    }
+    .text-hero:hover{
+        color: aquamarine;
+    }
+
+      .carousel-indicators [data-bs-target] {
+    background-color: grey;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
+  /* Active round button (green) */
+  .carousel-indicators .active {
+    background-color: green;
+  }
+    .btn-teal {
+    background-color: #20c997; /* Teal green */
+    color: white;
+    font-weight: 600;
+  }
+  .btn-teal:hover {
+    background-color: #17a589;
+    color: white;
+  }
+  .footer-custom {
+    background-color: #0a1a2f; /* Dark Blue */
+  }
+  body {
+  padding-top: 80px; /* equal to navbar height */
+}
+
+
+</style>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid p-3 mb-4"> 
+            <h1 class="fw-bold mb-0 ">Prowess Lift</h1>
+
+            <button class="navbar-toggler text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+               
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-success fw-bold" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  fw-bold" href="classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="error.html">Pages</a>
+                    </li>
+                    <li class="nav-item text-dark fw-bold">
+                        <a class="nav-link fw-bold" href="#">
+                            <i class="bi bi-search fw-bold"></i>
+                        </a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <button class="btn nav-link">
+                            <i class="bi bi-moon fw-bold"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<section class="hero-section-1 py-5 mt-5 pt-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+
+      <!-- Left Content -->
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold mb-4">
+          Everything you want is outside of your comfort zone.
+        </h1>
+        <p class="lead mb-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui commodi pariatur esse delectus quaerat quasi in animi, temporibus quam quis?
+        </p>
+
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="#" class="btn btn-light p-3 fw-bold">Get Started</a>
+          <a href="#" class="btn btn-success fw-bold">Contact Us</a>
+        </div>
+      </div>
+
+      <!-- Right Signup Card -->
+      <div class="col-lg-5">
+        <div class="card shadow-lg border-0 rounded-3 p-4">
+          <h4 class="fw-bold mb-3 text-center">Sign Up</h4>
+          <form>
+            <!-- Name -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email ID</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+
+            <!-- Terms & Conditions -->
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="terms">
+              <label class="form-check-label" for="terms">
+                I accept the <a href="#">Terms & Conditions</a>
+              </label>
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-success fw-bold">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<div class="container my-5">
+  <div class="row text-center">
+    
+    
+    <div class="col-md-3">
+      <div class="card-1 shadow-lg rounded-3" style="width: 250px; height: 250px;">
+        <div class="card-body">
+          <h5 class="card-title mb-3 p-3 ">workout videos</h5>
+          <p class="card-text mb-4">Access to hundreds of free workout videos.</p>
+          <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+          <a href="#" class="btn " style="background-color: rgb(4, 209, 209);">Read More</a>
+
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="col-md-3">
+      <div class="card-1 shadow-lg rounded-3" style="width: 250px; height: 250px;">
+        <div class="card-body">
+          <h5 class="card-title mb-3 p-3">Workout Programs</h5>
+          <p class="card-tex mb-4">Affordable and effective workout programs.</p>
+          <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+          <a href="#" class="btn " style="background-color: rgb(4, 209, 209);">Read More</a>
+
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="col-md-3">
+      <div class="card-1 shadow-lg rounded-3" style="width: 250px; height: 250px;">
+        <div class="card-body">
+          <h5 class="card-title mb-3 p-3">Meal Plans</h5>
+          <p class="card-text mb-4">Plans built with registered nutritionists..</p>
+          <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+          <a href="#" class="btn " style="background-color: rgb(4, 209, 209);">Read More</a>
+
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="col-md-3">
+      <div class="card-1 shadow-lg rounded-3" style="width: 250px; height: 250px;">
+        <div class="card-body">
+          <h5 class="card-title mb-3 p-3">Free Memberships</h5>
+          <p class="card-text mb-4">Add powerful features to your membership.</p>
+          <a href="#" class="btn " style="background-color: rgb(4, 209, 209);">Read More</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <div class="container-fluid fullwidth-section">
+        <div class="container p-5 rounded">
+        <div class="row align-items-center gap:40px">
+        
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <img src="./assests/ab1.jpg" class="img-fluid rounded">
+                        </div>
+
+         
+                <div class="col-lg-6">
+                    <h2 class="display-6 fw-bold mb-4">
+Get more with low-cost training programs and advanced features.</h2>
+                    <p class="lead mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem error nemo consectetur aperiam quibusdam dignissimos adipisci iste. Molestiae aliquam officiis iure soluta earum, excepturi id!</p>
+                  
+                    <div class="d-flex align-items-center"> 
+                        <a href="#" class="btn btn-success btn-lg px-4 align-items-center" style="background-color: rgb(1, 192, 192);">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid bg-light">
+        <div class="row">
+            <div class="text-center mt-5">
+            <p class="text-secondary fw-bold">About Prowess Lift</p>
+            <h2 class="display-6 fw-bold">Everything about Success</h2>
+            </div>
+        </div>
+    
+
+     <div class="container-fluid fullwidth-section">
+        <div class="container p-5 rounded">
+        <div class="row align-items-center gap:40px">
+
+              <div class="col-lg-4">
+                    <h2 class="display-5 fw-bold mb-4 text-center" >35+</h2>
+<p>35+ million workout Programs completed each month by our amazing Prowess Lift Family.</p>
+              </div>
+
+              <div class="col-lg-4">
+                    <h2 class="display-5 fw-bold mb-4 text-center">500+</h2>
+<p>500+ free workout videos for every fitness level + effective & affordable workout programs.</p>
+              </div>
+
+              <div class="col-lg-4">
+                    <h2 class="display-5 fw-bold mb-4 text-center">26+</h2>
+<p>26+ years of combined experience helping people achieve their fitness & health goals.</p>
+              </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+    <div class="container-fluid fullwidth-section p-5 mt-5">
+        <!-- <div class="container p-5 rounded"> -->
+        <div class="row align-items-center">
+
+             <div class="col-lg-5">
+                    <h2 class="display-6 fw-bold mb-4">Once you can control your mind, you can control your body.</h2>
+                    <p class="lead mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem error nemo consectetur aperiam quibusdam dignissimos adipisci iste. Molestiae </p>
+                  
+                   <ul class="list-unstyled mb-4">
+                        <li class="mb-3 display-6 fw-bold> Heart"><h4>Immune</h4></li>
+                        <div class="progress" style="height: 8px; margin-bottom: 20px;">
+    <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+       <li class="mb-3 display-6 fw-bold> Heart"><h4>Heart & Energy</h4></li>
+                        <div class="progress" style="height: 8px; margin-bottom: 15px;">
+    <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+ <li class="mb-3 display-6 fw-bold> Heart"><h4>Joints & Bones</h4></li>
+                        <div class="progress" style="height: 8px; margin-bottom: 20px;">
+    <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+ <li class="mb-3 display-6 fw-bold> Heart"><h4>Skin</h4></li>
+                        <div class="progress" style="height: 8px;">
+    <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+                    </ul>
+                </div>
+        
+                       <div class="col-lg-7 mb-4 mb-lg-0 d-flex justify-content-end">
+  <img src="./assests/ab4.jpg" class="img-fluid rounded-3" style="max-width: 450px;">
+</div>
+         
+        </div>
+        </div>
+  
+
+<section class="hero-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center"> 
+        <h1 class="display-5 fw-bold mb-4">
+          Everything you want is outside of your comfort zone.
+        </h1>
+        <p class="lead mb-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui commodi pariatur esse delectus quaerat quasi in animi, temporibus quam quis?
+        </p>
+
+        <div class="d-flex gap-3 flex-wrap justify-content-center">
+          <a href="#" class="btn btn-hero btn-light p-3 fw-bold">Get Started</a>
+          <a href="#" class="btn btn-hero btn-success fw-bold text-center">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <div class="row">
+            <div class="text-center mt-5">
+            <p class="text-secondary fw-bold">Blog Posts</p>
+            <h2 class="display-6 fw-bold">Take charge of your life</h2>
+            </div>
+        </div>
+
+
+    <section class="py-5">
+        <div class="container">
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="image-card shadow-sm">
+                        <div class="image-container">
+                            <img src="assests/ab5.jpg" class="img-fluid">
+                        </div>
+                        <div class="card-content p-3">
+                            <p class="text-muted mb-3">Aug 28, 2020.</p>
+                            <a href="#" class="fw-bold mb-4 text-dark fs-4" style="text-decoration: none;">One-Hour Workout</a>
+                            <p class="text-muted mb-3 mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem deserunt culpa consequatur modi cumque corrupti consectetur quae exercitationem non ducimus.</p>
+                            
+                            <a href="#" class="btn btn-outline-success text-dark text-hero fw-bold">Read More <i class="bi bi-arrow-right"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                   <div class="col-md-4">
+                    <div class="image-card shadow-sm">
+                        <div class="image-container">
+                            <img src="assests/ab3.jpg"  class="img-fluid">
+                        </div>
+                        <div class="card-content p-3">
+                            <p class="text-muted mb-3">Aug 28, 2020.</p>
+                            <a href="#" class="fw-bold mb-4 text-dark fs-4" style="text-decoration: none;">More Discipline</a>
+                            <p class="text-muted mb-3 mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem deserunt culpa consequatur modi cumque corrupti consectetur quae exercitationem non ducimus.</p>
+                            
+                            <a href="#" class="btn btn-outline-success text-dark fw-bold">Read More <i class="bi bi-arrow-right"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                      <div class="col-md-4">
+                    <div class="image-card shadow-sm">
+                        <div class="image-container">
+                            <img src="./assests/ab2.jpg" class="img-fluid">
+                        </div>
+                        <div class="card-content p-3">
+                            <p class="text-muted mb-3">Aug 28, 2020.</p>
+                            <a href="#" class="fw-bold mb-4 text-dark fs-4" style="text-decoration: none;">One-Hour Workout</a>
+                            <p class="text-muted mb-3 mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem deserunt culpa consequatur modi cumque corrupti consectetur quae exercitationem non ducimus.</p>
+                            
+                            <a href="#" class="btn btn-outline-success text-dark fw-bold">Read More <i class="bi bi-arrow-right"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      <div class="container-fluid " style="background-color: rgb(1, 193, 193);">
+     <div class="container-fluid fullwidth-section">
+        <div class="container p-5 rounded">
+        <div class="row align-items-center gap:40px">
+
+              <div class="col-lg-10">
+                    <h2 class="fs-2 fw-bold mb-4 " >Ready to try a Prowess Lift workout?</h2>
+
+              </div>
+              <div class="col-lg-2">
+                    <a href="#" class="btn btn-light p-3 fw-bold text-success">Get Start Today</a>
+              </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="container-fluid text-center align-items-center">
+  <div class="row">
+    <div class="text-center mt-5">
+      <p class="text-secondary fw-bold">Testimonials</p>
+      <h2 class="display-6 fw-bold">What our clients say</h2>
+    </div>
+  </div>
+
+  <div id="testimonialCarousel" class="carousel slide mt-4" data-bs-ride="false">
+  <!-- Carousel inner -->
+  <div class="carousel-inner">
+
+    <!-- Testimonial 1 -->
+    <div class="carousel-item active">
+      <div class="col-lg-8 mx-auto text-center">
+        <img src="assests/team1.jpg" class="rounded-circle mb-3"
+             style="width:90px; height:90px; object-fit:cover;" alt="Client 1">
+        <p class="text-muted">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima distinctio delectus quas, eum beatae iusto doloribus perferendis ipsa laudantium debitis corporis ea maxime deleniti provident!
+        </p>
+        <h2 class="fs-5 fw-bold">Ruth Edward</h2>
+        <p class="text-secondary fw-bold">Example Company</p>
+      </div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="carousel-item">
+      <div class="col-lg-8 mx-auto text-center">
+        <img src="assests/team2.jpg" class="rounded-circle mb-3"
+             style="width:90px; height:90px; object-fit:cover;" alt="Client 2">
+        <p class="text-muted">
+          Dolorem expedita laboriosam amet perspiciatis totam, hic quos aspernatur magnam fugit. Quo deserunt asperiores repellat laborum soluta.
+        </p>
+        <h2 class="fs-5 fw-bold">John Smith</h2>
+        <p class="text-secondary fw-bold">Tech Solutions</p>
+      </div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="carousel-item">
+      <div class="col-lg-8 mx-auto text-center">
+        <img src="assests/team3.jpg" class="rounded-circle mb-3"
+             style="width:90px; height:90px; object-fit:cover;" alt="Client 3">
+        <p class="text-muted">
+          Praesentium deleniti repellendus ducimus voluptatem at! A deserunt consequatur facere minima temporibus delectus, harum accusamus!
+        </p>
+        <h2 class="fs-5 fw-bold">Maria Wilson</h2>
+        <p class="text-secondary fw-bold">Creative Studio</p>
+      </div>
+    </div>
+
+    <!-- Testimonial 4 -->
+    <div class="carousel-item">
+      <div class="col-lg-8 mx-auto text-center">
+        <img src="assests/team4.jpg" class="rounded-circle mb-3"
+             style="width:90px; height:90px; object-fit:cover;" alt="Client 4">
+        <p class="text-muted">
+          Quibusdam repellat excepturi sunt iste officia fuga assumenda maxime dolores. Tempore, doloremque? Sequi, facere vitae?
+        </p>
+        <h2 class="fs-5 fw-bold">Alex Brown</h2>
+        <p class="text-secondary fw-bold">Marketing Hub</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Carousel indicators (moved below text) -->
+  <div class="text-center mt-4">
+    <div class="carousel-indicators position-static">
+      <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+              class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+              class="rounded-circle" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+              class="rounded-circle" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3"
+              class="rounded-circle" aria-label="Slide 4"></button>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer class="footer-custom text-secondary pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="fw-bold mb-3 text-light">Prowess Lift</h5>
+        <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula.</p>
+        <p><i class="bi bi-telephone me-2"></i> +(21) 255 088 4943</p>
+        <p><i class="bi bi-envelope me-2"></i> prowesslift@mail.com</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="fw-bold mb-3 text-light">Useful Links</h5>
+        <ul class="list-unstyled text-secondary">
+          <li><a href="#" class="   text-secondary text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Blog posts</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Pricing plans</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Careers</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Classes</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Contact us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Healthy Living -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="fw-bold mb-3 text-light">Healthy Living</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-secondary text-decoration-none">Fitness</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Health</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Before & After</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Weight Loss</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Healthy Recipes</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Meal Plans</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Workout Videos</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Support</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="fw-bold mb-3 text-light">Subscribe to our Newsletter</h5>
+        <p>Enter your email and receive the latest news, updates and special offers from us.</p>
+        <form>
+          <div class="mb-3">
+            <input type="email" class="form-control rounded" placeholder="Your Email Address">
+          </div>
+          <button type="submit" class="btn btn-teal w-100 rounded">Subscribe Now</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+    
+    
+
+
+
